@@ -1,2 +1,0 @@
-# portfolio
-Created with CodeSandbox
