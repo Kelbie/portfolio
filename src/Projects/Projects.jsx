@@ -35,7 +35,7 @@ Status = styled(Status)`
 function Projects(props) {
   const [projects, setProjects] = useState([
     {
-      links: [{ text: "view website", href: "https://bitreon.app" }],
+      links: [{ text: "view code", href: "https://github.com/KevinKelbie/bitreon" }],
       images: ["3.png"],
       title: "Cryptocurrency Powered Crowdfunding Website",
       status: "in development",
