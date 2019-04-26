@@ -16,7 +16,7 @@ function Sandboxes(props) {
         thumbnail={"1.png"}
         title={"Comment System using Hooks"}
         status={"featured on codesandbox.io"}
-        desc={"A comment system similar to Reddit using React Hooks."}
+        desc={"A comment system similar to Reddit using React Hooks which was featured on the front page of codesandbox.io"}
         tags={["react"]}
       />
     </div>
