@@ -31,7 +31,7 @@ function About(props) {
           <a href="/sandboxes">Sandboxes</a>
         </span>
         <span>
-          <a href="/resume">Resume</a>
+          <a href="/cv.pdf">Resume</a>
         </span>
       </div>
     </div>
