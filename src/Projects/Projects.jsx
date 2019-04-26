@@ -80,7 +80,7 @@ function Projects(props) {
       images: ["0.png"],
       title: "CELCAT timetable PDF Parser",
       status: "outdated",
-      rank: 5,
+      rank: 3,
       desc: `This api converts CELCAT PDF's into JSON objects.`,
       tags: ["rest", "node", "postgres"]
     },
@@ -109,15 +109,15 @@ function Projects(props) {
       desc: `This application allows users to send, receive and sell their cryptocurrencies for other cryptocurrencies.`,
       tags: ["cryptocurrency", "node", "jquery", "ejs"]
     },
-    {
-      links: [{ text: "private code", href: "" }],
-      images: ["0.png"],
-      title: "Student Log (group project)",
-      status: "in development",
-      rank: 6,
-      desc: `Student Log is a website that allows university students to register their attendance during classes.`,
-      tags: ["node", "jquery"]
-    }
+    // {
+    //   links: [{ text: "private code", href: "" }],
+    //   images: ["0.png"],
+    //   title: "Student Log (group project)",
+    //   status: "in development",
+    //   rank: 6,
+    //   desc: `Student Log is a website that allows university students to register their attendance during classes.`,
+    //   tags: ["node", "jquery"]
+    // }
     /*{
       links: [
         { text: "view specification", href: "" },

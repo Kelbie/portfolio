@@ -10,7 +10,10 @@ function Project(props) {
     <div {...props}>
       <div className="img">
         <div className="img-container">
-          <img src={props.images} alt="" />
+          {
+            props.images != "0.png"? 
+            <img src={props.images} alt="" /> : ""
+          }
         </div>
       </div>
       <div className="links">
