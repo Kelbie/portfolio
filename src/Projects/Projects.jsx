@@ -67,7 +67,7 @@ function Projects(props) {
       links: [
         {
           text: "Website",
-          href: "..."
+          href: "https://statechain.info"
         },
         {
           text: "Explorer Github",
