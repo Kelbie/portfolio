@@ -12,7 +12,7 @@ import styled from "styled-components";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 
 library.add(faGithub);
 
@@ -20,9 +20,14 @@ function About(props) {
   return (
     <div {...props}>
       <h1>Kevin Kelbie</h1>
-      <a href="https://github.com/KevinKelbie">
-        <FontAwesomeIcon icon={faGithub} />
-      </a>
+      <div className="socials">
+        <a href="https://github.com/KevinKelbie">
+          <FontAwesomeIcon icon={faGithub} />
+        </a>
+        <a href="https://linkedin.com/in/kelbie/">
+          <FontAwesomeIcon icon={faLinkedinIn} />
+        </a>
+      </div>
       <div className="links">
         <span>
           <a href="/projects">Projects</a>
@@ -39,7 +44,7 @@ function About(props) {
 }
 
 About = styled(About)`
-  color: #626262;
+  color: #4a5568;
   text-align: center;
   margin-top: 100px;
   margin-bottom: 100px;
@@ -50,11 +55,18 @@ About = styled(About)`
   svg {
     cursor: pointer;
     font-size: 18px;
-    color: #626262;
+    color: #4a5568;
+  }
+
+  .socials {
+    display: flex;
+    justify-content: space-evenly;
+    width: 64px;
+    margin: auto;
   }
 
   .links {
-    color: inherit;
+    color: #718096;
     > * {
       color: inherit;
       margin: 4px;

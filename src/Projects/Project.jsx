@@ -10,10 +10,7 @@ function Project(props) {
     <div {...props}>
       <div className="img">
         <div className="img-container">
-          {
-            props.images != "0.png"? 
-            <img src={props.images} alt="" /> : ""
-          }
+          {props.images != "0.png" ? <img src={props.images} alt="" /> : ""}
         </div>
       </div>
       <div className="links">
@@ -42,8 +39,17 @@ function Project(props) {
         <span>{props.desc}</span>
       </p>
       <div className="tags">
-        {props.tags.map(tag => {
-          return <Tag>{tag}</Tag>;
+        {props.tags.map((tag, i) => {
+          return (
+            <>
+              <Tag>{tag}</Tag>
+              {i <= props.tags.length - 2 ? (
+                <span className="seperator">•</span>
+              ) : (
+                ""
+              )}
+            </>
+          );
         })}
       </div>
     </div>
@@ -51,29 +57,10 @@ function Project(props) {
 }
 
 Project = styled(Project)`
-  display: grid;
-  grid-template-areas:
-    "img links"
-    "img title"
-    "img desc"
-    "img tags"
-    "img gap";
-  grid-template-columns: minmax(auto, 1fr) 1fr;
-  grid-template-rows: repeat(5, 0fr) minmax(0fr, 1fr);
-
-  @media screen and (max-width: 500px) {
-    grid-template-areas:
-      "links"
-      "title"
-      "img"
-      "desc"
-      "tags";
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, auto);
-  }
-
   padding: 8px;
-  border-bottom: 2px solid #dbdbdb;
+  background: #f7fafc;
+  border-radius: 8px;
+  box-shadow: 0px 0px 16px 0px rgba(26, 32, 44, 0.03);
 
   .img {
     grid-area: img;
@@ -82,29 +69,20 @@ Project = styled(Project)`
 
     > .img-container {
       height: min-content;
-      margin: 8px 32px 8px 0px;
-      @media screen and (max-width: 500px) {
-        margin: 8px 0px 8px 0px;
-      }
-      border-radius: 2px;
-      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
       > img {
         display: flex;
-        margin: 0;
         width: 100%;
         border-radius: inherit;
       }
     }
   }
 
-  * {
-    margin-bottom: 8px;
-  }
-
   .title {
     grid-area: title;
     font-size: 24px;
-    color: #626262;
+    color: #4a5568;
+    font-weight: 600;
   }
 
   h2 {
@@ -115,30 +93,27 @@ Project = styled(Project)`
   }
 
   .desc {
-    grid-area: desc;
     font-size: 14px;
-    color: #b1b1b1;
+    color: #a0aec0;
     text-align: left;
   }
 
   .links {
-    grid-area: links;
     text-align: left;
     font-size: 14px;
     > * {
-      padding: 4px;
+      padding: 8px 8px 8px 0px;
+    }
+    .seperator {
+      color: #3182ce;
     }
 
     > .link {
       color: gray;
       > a {
-        color: #2096ed;
+        color: #3182ce;
         text-decoration: none;
       }
-    }
-
-    > .seperator {
-      color: #d9d9d9;
     }
   }
 
@@ -148,7 +123,12 @@ Project = styled(Project)`
     flex-wrap: wrap;
     grid-gap: 4px;
 
+    .seperator {
+      color: #718096;
+    }
+
     > * {
+      padding: 0px 8px 0px 0px;
       width: max-content;
     }
   }

@@ -16,11 +16,19 @@ function Sandboxes(props) {
         thumbnail={"1.png"}
         title={"Comment System using Hooks"}
         status={"featured on codesandbox.io"}
-        desc={"A comment system similar to Reddit using React Hooks which was featured on the front page of codesandbox.io"}
+        desc={
+          "A comment system similar to Reddit using React Hooks which was featured on the front page of codesandbox.io"
+        }
         tags={["react"]}
       />
     </div>
   );
 }
 
-export default Sandboxes;
+export default styled(Sandboxes)`
+  max-width: 600px;
+  margin: auto;
+  > * {
+    margin-bottom: 16px;
+  }
+`;

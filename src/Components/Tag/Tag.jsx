@@ -4,16 +4,14 @@ import ReactDOM from "react-dom";
 import styled from "styled-components";
 
 function Tag(props) {
-  return <button {...props}>{props.children}</button>;
+  return <div {...props}>{props.children}</div>;
 }
 
 Tag = styled(Tag)`
   display: inline-block;
-  color: white;
+  color: #718096;
   border-radius: 2px;
-  padding: 8px;
-  background: #2096ed;
-  border: none;
+  padding: 8px 8px 0px 0px;
   font-size: 14px;
 `;
 
