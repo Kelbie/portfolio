@@ -8,6 +8,12 @@ import Tag from "../Components/Tag/Tag.jsx";
 function Project(props) {
   return (
     <div {...props}>
+      {props.video && (
+        <video controls loop>
+          <source src={props.video} type="video/mp4" />
+          Your browser does not support HTML5 video.
+        </video>
+      )}
       <div className="img">
         <div className="img-container">
           {props.images != "0.png" ? <img src={props.images} alt="" /> : ""}
@@ -61,6 +67,10 @@ Project = styled(Project)`
   background: #f7fafc;
   border-radius: 8px;
   box-shadow: 0px 0px 16px 0px rgba(26, 32, 44, 0.03);
+
+  video {
+    width: 100%;
+  }
 
   .img {
     grid-area: img;

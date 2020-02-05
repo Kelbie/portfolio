@@ -78,6 +78,7 @@ function Projects(props) {
           href: "https://github.com/KevinKelbie/statechain-core"
         }
       ],
+      video: "1.mp4",
       title: "Statechain Server & Explorer (Honours Project)",
       status: "in development",
       rank: 2,
@@ -213,6 +214,7 @@ function Projects(props) {
               links={project.links}
               title={project.title}
               images={project.images}
+              video={project.video}
               status={project.status}
               desc={project.desc}
               tags={project.tags}
