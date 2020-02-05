@@ -9,9 +9,7 @@ function Sandboxes(props) {
   return (
     <div {...props}>
       <Project
-        links={[
-          { href: "https://llmk22kz19.codesandbox.io/", text: "view demo" }
-        ]}
+        links={[{ href: "https://llmk22kz19.codesandbox.io/", text: "Demo" }]}
         images={["1.png"]}
         thumbnail={"1.png"}
         title={"Comment System using Hooks"}
@@ -19,7 +17,7 @@ function Sandboxes(props) {
         desc={
           "A comment system similar to Reddit using React Hooks which was featured on the front page of codesandbox.io"
         }
-        tags={["react"]}
+        tags={["React", "Styled Components"]}
       />
     </div>
   );
