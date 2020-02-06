@@ -100,7 +100,7 @@ function Projects(props) {
       title: "StudentLog",
       status: "in development",
       rank: 1,
-      desc: `StudentLog was a solution to a problem me and my peers faced which was our University timetable was not mobile-friendly so I built a mobile-first timetable web app. I parsed PDF files into JSON and stored them in a PostgreSQL database which I used at an API for my frontend app which was written in ReactJS.`,
+      desc: `StudentLog is a website which allows students to find internship or new grad gobs relevant to their careers as well as using the built-in dynamic CV builder. The website has other functionality such as a timetable viewer and student an accommodation board.`,
       tags: ["Bitcoin", "Apollo GraphQL", "NodeJS", "PostgreSQL"]
     },
     {
