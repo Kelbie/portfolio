@@ -11,7 +11,6 @@ function Project(props) {
       {props.video && (
         <video controls loop>
           <source src={props.video} type="video/mp4" />
-          <source src={props.video} type="video/mov" />
           Your browser does not support HTML5 video.
         </video>
       )}

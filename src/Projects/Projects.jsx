@@ -96,7 +96,7 @@ function Projects(props) {
           href: "https://github.com/KevinKelbie/student-log"
         }
       ],
-      video: "2.mov",
+      video: "2.mp4",
       title: "StudentLog",
       status: "in development",
       rank: 1,
