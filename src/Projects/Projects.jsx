@@ -57,6 +57,7 @@ function Projects(props) {
           href: "https://github.com/KevinKelbie/vscode-bitcoin"
         }
       ],
+      video: "3.mp4",
       title: "VSCode Bitcoin Extention",
       status: "in development",
       rank: 3,
